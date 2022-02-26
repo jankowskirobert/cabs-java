@@ -38,7 +38,7 @@ public class Driver extends BaseEntity {
     private String photo;
 
     @Column(nullable = false)
-    private String driverLicense;
+    private DriverLicense driverLicense;
 
     @OneToOne
     private DriverFee fee;
@@ -105,11 +105,11 @@ public class Driver extends BaseEntity {
         this.photo = photo;
     }
 
-    public String getDriverLicense() {
+    public DriverLicense getDriverLicense() {
         return driverLicense;
     }
 
-    public void setDriverLicense(String driverLicense) {
+    public void setDriverLicense(DriverLicense driverLicense) {
         this.driverLicense = driverLicense;
     }
 
